@@ -261,21 +261,33 @@
   } else if ([@"original" isEqualToString:name]) {
     return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeZero
                                                                  title:NSLocalizedStringFromTableInBundle(@"Original", @"TOCropViewControllerLocalizable", resourceBundle, nil)];
+  } else if ([@"2x3" isEqualToString:name]) {
+    return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(2.0f, 3.0f)
+                                                                 title:@"2:3"];
   } else if ([@"3x2" isEqualToString:name]) {
     return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(3.0f, 2.0f)
                                                                  title:@"3:2"];
+  } else if ([@"3x4" isEqualToString:name]) {
+    return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(3.0f, 4.0f)
+                                                                 title:@"3:4"];
   } else if ([@"4x3" isEqualToString:name]) {
     return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(4.0f, 3.0f)
                                                                  title:@"4:3"];
+  } else if ([@"3x5" isEqualToString:name]) {
+    return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(3.0f, 5.0f)
+                                                                 title:@"3:5"];
   } else if ([@"5x3" isEqualToString:name]) {
     return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(5.0f, 3.0f)
                                                                  title:@"5:3"];
+  } else if ([@"4x5" isEqualToString:name]) {
+    return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(4.0f, 5.0f)
+                                                                 title:@"4:5"];
   } else if ([@"5x4" isEqualToString:name]) {
     return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(5.0f, 4.0f)
                                                                  title:@"5:4"];
-  } else if ([@"7x5" isEqualToString:name]) {
-    return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(7.0f, 5.0f)
-                                                                 title:@"7:5"];
+  } else if ([@"9x16" isEqualToString:name]) {
+    return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(9.0f, 16.0f)
+                                                                 title:@"9:16"];
   } else if ([@"16x9" isEqualToString:name]) {
     return [[TOCropViewControllerAspectRatioPreset alloc] initWithSize:CGSizeMake(16.0f, 9.0f)
                                                                  title:@"16:9"];
