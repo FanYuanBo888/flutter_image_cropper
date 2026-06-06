@@ -25,6 +25,8 @@ enum CropAspectRatioPreset implements CropAspectRatioPresetData {
   ratio5x3,
   ratio4x5,
   ratio5x4,
+  ratio5x7,
+  ratio7x5,
   ratio9x16,
   ratio16x9;
 
@@ -51,6 +53,10 @@ enum CropAspectRatioPreset implements CropAspectRatioPresetData {
         return '4x5';
       case CropAspectRatioPreset.ratio5x4:
         return '5x4';
+      case CropAspectRatioPreset.ratio5x7:
+        return '5x7';
+      case CropAspectRatioPreset.ratio7x5:
+        return '7x5';
       case CropAspectRatioPreset.ratio9x16:
         return '9x16';
       case CropAspectRatioPreset.ratio16x9:
@@ -81,6 +87,10 @@ enum CropAspectRatioPreset implements CropAspectRatioPresetData {
         return (4, 5);
       case CropAspectRatioPreset.ratio5x4:
         return (5, 4);
+      case CropAspectRatioPreset.ratio5x7:
+        return (5, 7);
+      case CropAspectRatioPreset.ratio7x5:
+        return (7, 5);
       case CropAspectRatioPreset.ratio9x16:
         return (9, 16);
       case CropAspectRatioPreset.ratio16x9:
